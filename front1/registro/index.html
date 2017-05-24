@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+
+<h1>Microalgas</h1>
+
+
+
+
+<div class="Row">
+
+<div align="center" class="Column">
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/277170/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+</div>
+
+<div align="center" class="Column"> 
+<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/277170/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+</div>
+
+
+</div>
+
+<div class="Row">
+
+    <div align="center" class="Column">
+        <button id= "Blanco" class="button">Blanco</button>
+          
+        
+</div>
+<div align="center" class="Column">
+        <button id="Morado" class="button">Morado</button>
+
+ </div>   
+ <div align="center" class="Column">    
+
+        <button id="Verde" class="button">Verde</button>
+       
+</div>
+</div>
+
+<div class="Row" align="center">
+<input type="range" id="intensidad" value="0" min="0" max="1023">
+<button onclick="enviarIntensidad()" class="button">Enviar intensidad</button>
+
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
